@@ -1,0 +1,22 @@
+[class^="icon-"], [class*=" icon-"] {
+	@include icomoon;
+}
+
+.safari {
+	* {
+		-webkit-backface-visibility: hidden;
+		-webkit-transform-style: preserve-3d;
+	}
+}
+
+.push-left {
+	float: left;
+}
+
+.push-right {
+	float: right;
+}
+
+.text-justify {
+	text-align: justify;
+}

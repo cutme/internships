@@ -1,0 +1,23 @@
+body {
+	@include antialias;
+	line-height: 1.6;
+	font: {
+		family: $text;
+		size: #{$base-font-size}px;
+		weight: $book;
+	}
+	color: $color-page-text;
+}
+
+a {
+	@include hover;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+strong {
+	font-weight: $heavy;
+}
+
+@include font-face-db( "icomoon", "icomoon");

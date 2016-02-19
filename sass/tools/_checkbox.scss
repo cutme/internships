@@ -1,0 +1,36 @@
+span.ui-checkbox {
+	@include icomoon;
+	position: relative;
+	display: inline-block;
+	width: 34px; height: 34px;
+	background-color: white;
+	border: 2px solid $color-checkbox-text;
+	text-align: center;
+	line-height: 32px;
+	overflow: hidden;
+	cursor: pointer;
+	vertical-align: middle;
+
+	&:after {
+		@include hover;
+		display: none;
+		content: "\e905";
+		font-size: 11px;
+	}
+}
+
+span.ui-helper-hidden {
+	display: none;
+}
+
+span.ui-checkbox-state-checked,
+span.ui-checkbox-state-checked-hover {	
+	&:after {
+		display: block;
+	}
+}
+
+.ui-helper-hidden-accessible {
+	position: absolute;
+	left: -999em;
+}

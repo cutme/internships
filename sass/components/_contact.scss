@@ -1,0 +1,30 @@
+.contact {
+	position: relative;
+
+	.o-panel__content {
+		position: relative;
+		padding-left: 140px;
+		
+		@media screen and ( min-width: 1024px ) {
+			padding-left: grid(140, $panel-width);
+		}
+		
+		.icon-envelope {
+			@include scut-center-transform(y);
+			left: 20px;
+			font-size: em(36);
+		}
+		
+		a {
+			text-decoration: underline;
+			
+			&:hover {
+				margin-left: -10px;
+				padding: 5px 10px;
+				background-color: $color-page-text;
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+}

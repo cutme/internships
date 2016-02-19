@@ -1,0 +1,108 @@
+.top {	
+	@include background-size(100% auto);
+	background: {
+		image: url(../img/bg-header.png);
+		repeat: no-repeat;
+		position: right top;
+		color: $color-page-header;
+	}
+	padding: 80px grid($page-padding) 0 grid($page-padding);
+	
+	@media screen and ( min-width: $grid-base-width+px ) {
+		@include background-size($grid-base-width+px auto);
+	}
+	
+	@media screen and ( max-width: 640px ) {
+		padding-top: 60px;
+	}
+	
+	.o-bulb {
+		top: 0;
+	}
+
+	.o-circle {
+		bottom: -6.5vw; //-120px;
+		line-height: 48px;
+		border-color: $color-page-text;
+
+		&:hover {
+			background-color: $color-page-text;
+			color: white;
+		}
+	}
+
+	.logo {
+		position: relative;
+		z-index: 10;
+	}
+	
+	.nav-primary {
+		top: 10px;
+		
+		a {
+			&:hover {
+				background-color: $color-page-text;
+				color: white;
+			}
+		}
+	}
+
+	.o-row {
+		margin-bottom: 14vw; //200px;
+	}
+	
+	.top__addon {
+		position: absolute;
+		bottom: 15px;
+		right: 0;
+		text-align: right;
+		line-height: 1.2;		
+
+		p {
+			font-size: 2.6vw; // 50px
+			
+			@media screen and ( max-width: 640px ) {
+				font-size: em(20);
+			}
+			
+			@media screen and ( max-width: 320px ) {
+				font-size: em(16);
+			}
+		}
+		
+		@media screen and ( max-width: 1280px ) {
+			bottom: 0;
+		}
+		
+		@media screen and ( max-width: 640px ) {
+			bottom: 5px;
+		}
+	}
+
+	.top__title {
+		position: relative;
+		margin-bottom: 14vw; //300px;
+
+		h1 {
+			font: {
+				size: 10vw;
+				weight: $heavy;
+			}
+			margin-bottom: 40px;
+		}
+		
+		h4 {
+			font-size: 3.5vw;
+			font-weight: $book;
+			
+			@media screen and ( max-width: 640px ) {
+				font-size: em(20);
+			}
+			
+			@media screen and ( max-width: 320px ) {
+				font-size: em(16);
+			}
+		}
+	}
+}
+

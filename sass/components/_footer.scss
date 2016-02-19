@@ -1,0 +1,58 @@
+body > footer {
+	background-color: $color-page-text;
+	padding: 55px grid($page-padding);
+	color: white;
+	
+	@media screen and ( max-width: 640px ) {
+		padding: {
+			bottom: 20px;
+		}
+	}
+	
+	.o-bulb {
+		top: -15px;
+	}
+	
+	.o-circle {
+		border-color: white;
+		line-height: 40px;
+
+		&:hover {
+			background-color: $color-page-header;
+			color: $color-page-text;
+		}
+	}
+	
+	.logo {
+		position: relative;
+		z-index: 10;
+		color: white;
+	}
+	
+	.nav-primary {	
+		top: 0;
+		
+		@media screen and ( max-width: 768px ) {
+			margin-left: -10px;
+		}
+	
+		a {
+			&:hover {
+				background-color: $color-page-header;
+				color: $color-page-text;
+			}
+		}
+	}
+	
+	.o-row {
+		margin-bottom: 130px;
+		
+		@media screen and ( max-width: 640px ) {
+			margin-bottom: 70px;
+		}
+		
+		&:last-of-type {
+			margin-bottom: 50px;
+		}
+	}
+}

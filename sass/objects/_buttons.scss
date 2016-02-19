@@ -1,0 +1,57 @@
+.o-button {
+	@include hover;
+	position: relative;
+	height: 68px;
+	background-color: $color-page-text;
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+
+	.o-button__title {
+		@include hover;
+		position: relative; z-index: 2;
+		letter-spacing: 2px;
+		line-height: 68px;
+		font: {
+			family: $text;
+			weight: $heavy;
+		}
+		color: white;
+	}
+	
+	&.button--large {
+		height: 88px;
+		line-height: 88px;
+		
+		span {
+			font-size: 20px;
+			 text-transform: uppercase;
+		}
+	}
+	
+	&:after {
+		@include hover;
+		position: absolute; bottom: -100%; left: 0; z-index: 1;
+		display: block;
+		width: 100%;
+		height: 0;
+		background-color: $color-page-header;
+		content: ' ';
+	}
+
+	&:hover {
+		.no-mobile & {
+			&:after {
+				height: 100%;
+				bottom: 0;
+			}
+			span {
+				color: $color-page-text;
+			}
+		}
+	}
+	
+	&:active {
+		background-color: darken($color-page-header, 20%);
+	}
+}

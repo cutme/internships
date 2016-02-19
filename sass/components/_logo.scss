@@ -1,0 +1,8 @@
+.logo {
+	display: inline-block;
+	font-size: em(34);
+	
+	@media screen and ( max-width: 768px ) {
+		margin-bottom: 20px;
+	}
+}

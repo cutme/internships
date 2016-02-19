@@ -1,0 +1,10 @@
+.main {
+	padding: 100px grid($page-padding);
+	
+	@media screen and ( max-width: 640px ) {
+		padding: {
+			top: 50px;
+			bottom: 50px;
+		}
+	}
+}

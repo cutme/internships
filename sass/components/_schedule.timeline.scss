@@ -1,0 +1,68 @@
+.schedule__timeline {
+	@include clear;
+	
+	.timeline__column {
+		@media
+			screen and ( min-width: 1281px ),
+			screen and ( min-width: 768px ) and ( max-width: 1023px ) {
+			
+			float: left;
+			width: 53%;	
+			
+			&:last-child {
+				width: 47%;
+				padding-left: 1%;
+			}
+		}
+	}
+
+	.timeline__item {
+		display: table;
+		margin-bottom: 25px;
+		
+		@media screen and ( max-width: 1024px ) {
+			margin-bottom: 20px;
+		}
+		
+		@media screen and ( max-width: 640px ) {
+			margin-bottom: 10px;
+		}
+
+		.time {
+			display: table-cell;
+			white-space: nowrap;
+			font-weight: $heavy;
+			
+			@media screen and ( max-width: 420px ) {
+				display: block;
+				width: 100%;
+			}
+			
+			[class^="time__"] {
+				&:after {
+					padding: 0 10px;
+					content: '-';
+				}
+			}
+
+			.time__end {				
+				&:after {
+					padding: 0 15px;
+					
+					@media screen and ( max-width: 429px ) {
+						display: none;
+					}
+				}
+			}
+		}
+		
+		.description {
+			display: table-cell;
+			
+			@media screen and ( max-width: 420px ) {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
