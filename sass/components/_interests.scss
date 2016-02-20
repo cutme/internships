@@ -3,7 +3,7 @@
 		margin-right: grid(15, $panel-large-width);
 	}
 	
-	.c-interest__title {
+	&__title {
 		letter-spacing: 2px;
 		font-size: em(18);
 		
@@ -17,7 +17,7 @@
 		}
 	}
 	
-	.item {
+	&__item {
 		padding: 0 0 0 60px;
 		
 		@media screen and ( max-width: $grid-base-width+px ) {
@@ -35,7 +35,7 @@
 		}
 	}
 	
-	.label {
+	&__label {
 		display: inline-block;
 		vertical-align: middle;
 		letter-spacing: 1px;

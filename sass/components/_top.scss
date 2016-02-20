@@ -1,4 +1,4 @@
-.top {	
+.c-top {	
 	@include background-size(100% auto);
 	background: {
 		image: url(../img/bg-header.png);
@@ -42,7 +42,7 @@
 		}
 	}
 
-	.o-row {
+	.row {
 		margin-bottom: 14vw; //200px;
 	}
 }

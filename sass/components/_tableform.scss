@@ -1,16 +1,22 @@
-.c-tableform__row {
-	@include clear;
-	display: block;
-	width: 100%;
-	border: 2px solid $color-page-text;
-	border-bottom: none;
-	font-weight: $heavy;
-	
-	&:last-of-type {
+.c-tableform {
+	&__row {
+		display: block;
 		border: 2px solid $color-page-text;
+		border-bottom: none;
+		font-weight: $heavy;
+		
+		&:last-of-type {
+			border: 2px solid $color-page-text;
+		}
+		
+		&.error {
+			.item {
+				color: $color-error;
+			}
+		}	
 	}
 	
-	.item {
+	&__item {
 		padding: grid(20, $panel-large-width);
 		letter-spacing: 2px;
 		font-size: em(16);
@@ -28,17 +34,11 @@
 		@media screen and ( max-width: 640px ) {
 			font-size: em(12);
 		}
-	}
-	
-	&.error {
-		.item {
-			color: $color-error;
+		
+		&--field {
+			border-right: none;
+			line-height: inherit;
 		}
-	}
-	
-	input.item {
-		border-right: none;
-		line-height: inherit;			
 	}
 
 	@include input-placeholder {

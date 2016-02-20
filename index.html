@@ -13,10 +13,10 @@
 
 <body>
 
-	<div class="top" id="home">
+	<div class="c-top" id="home">
 		<div class="o-wrap">
 
-			<div class="o-row">
+			<div class="row">
 				<a href="#" class="c-logo icon-skygate"></a>
 
 				<nav class="c-nav-primary">
@@ -54,85 +54,86 @@
 				</div>
 			</div>
 
-			<div class="o-panel o-panel--large u-push-left" id="schedule">
+			<div class="o-panel o-panel--large c-schedule u-push-left" id="schedule">
 
 				<h3 class="o-panel__title">Harmonogram</h3>
 
-				<ul class="c-schedule__icons">
-					<li>
+				<ul class="c-schedule-icons clearfix">
+					<li class="c-schedule-icons__item">
 						<i class="icon-design"></i>
-						<span class="caption">Design</span>
+						<span class="c-schedule-icons__name">Design</span>
 					</li>
-					<li>
+					<li class="c-schedule-icons__item">
 						<i class="icon-clock"></i>
-						<span class="caption">Estymacja</span>
+						<span class="c-schedule-icons__name">Estymacja</span>
 					</li>
-					<li>
+					<li class="c-schedule-icons__item">
 						<i class="icon-rating"></i>
-						<span class="caption">Ocena</span>
+						<span class="c-schedule-icons__name">Ocena</span>
 					</li>
-					<li>
+					<li class="c-schedule-icons__item">
 						<i class="icon-mug"></i>
-						<span class="caption">Przerwa</span>
+						<span class="c-schedule-icons__name">Przerwa</span>
 					</li>
-					<li>
+					<li class="c-schedule-icons__item">
 						<i class="icon-sofa"></i>
-						<span class="caption">Chill</span>
+						<span class="c-schedule-icons__name">Chill</span>
 					</li>
 				</ul>
 					
-				<div class="c-schedule__timeline">
-					<ul class="timeline__column">
-						<li class="timeline__item">
-							<span class="time">
-								<span class="time__start">10:00</span>
-								<span class="time__end">11:00</span>
+				<div class="c-timeline">
+					<ul class="c-timeline__column">
+					
+						<li class="c-timeline__item">
+							<span class="c-timeline__times">
+								<span class="c-timeline__time">10:00</span>
+								<span class="c-timeline__time c-timeline__time--end">11:00</span>
 							</span>
 
 							<span class="description">Wprowadzenie, formowanie zespołów</span>
 						</li>
-						
-						<li class="timeline__item">
-							<span class="time">
-								<span class="time__start">11:00</span>
-								<span class="time__end">14:00</span>
+
+						<li class="c-timeline__item">
+							<span class="c-timeline__times">
+								<span class="c-timeline__time">11:00</span>
+								<span class="c-timeline__time c-timeline__time--end">14:00</span>
 							</span>
-							<span class="description">Tworzymy, tworzymy</span>
+							<span class="c-timeline__text">Tworzymy, tworzymy</span>
 						</li>
 						
-						<li class="timeline__item">
-							<span class="time">
-								<span class="time__start">14:00</span>
-								<span class="time__end">15:00</span>
+						<li class="c-timeline__item">
+							<span class="c-timeline__times">
+								<span class="c-timeline__time">14:00</span>
+								<span class="c-timeline__time c-timeline__time--end">15:00</span>
 							</span>
-							<span class="description">Przerwa obiadowa</span>
+							<span class="c-timeline__text">Przerwa obiadowa</span>
 						</li>
 					</ul>
 
-					<ul class="timeline__column">
-						<li class="timeline__item">
-							<span class="time">
-								<span class="time__start">15:00</span>
-								<span class="time__end">16:00</span>
+					<ul class="c-timeline__column">
+						<li class="c-timeline__item">
+							<span class="c-timeline__times">
+								<span class="c-timeline__time">15:00</span>
+								<span class="c-timeline__time c-timeline__time--end">16:00</span>
 							</span>
 
-							<span class="description">Ostatnie szlify oraz krótkie porady</span>
+							<span class="c-timeline__text">Ostatnie szlify oraz krótkie porady</span>
 						</li>
 						
-						<li class="timeline__item">
-							<span class="time">
-								<span class="time__start">16:00</span>
-								<span class="time__end">17:00</span>
+						<li class="c-timeline__item">
+							<span class="c-timeline__times">
+								<span class="c-timeline__time">16:00</span>
+								<span class="c-timeline__time c-timeline__time--end">17:00</span>
 							</span>
-							<span class="description">Prezentacje projektów oraz dyskusja</span>
+							<span class="c-timeline__text">Prezentacje projektów oraz dyskusja</span>
 						</li>
 						
-						<li class="timeline__item">
-							<span class="time">
-								<span class="time__start">17:00</span>
-								<span class="time__end">18:00</span>
+						<li class="c-timeline__item">
+							<span class="c-timeline__times">
+								<span class="c-timeline__time">17:00</span>
+								<span class="c-timeline__time c-timeline__time--end">18:00</span>
 							</span>
-							<span class="description">Podziękowania za udział i do domu</span>
+							<span class="c-timeline__text">Podziękowania za udział i do domu</span>
 						</li>
 					</ul>
 				</div>
@@ -170,19 +171,19 @@ Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames a
 					<form action="#">
 
 						<div class="o-row c-tableform">
-							<label class="c-tableform__row">
-								<span class="item">Cześć, mam na imię</span>
-								<input type="text" class="item" placeholder="Jan" />
+							<label class="c-tableform__row clearfix">
+								<span class="c-tableform__item">Cześć, mam na imię</span>
+								<input type="text" class="c-tableform__item c-tableform__item--field" placeholder="Jan" />
 							</label>
 							
-							<label class="c-tableform__row">
-								<span class="item">Moje nazwisko</span>
-								<input type="text" class="item" placeholder="Kowalski" />
+							<label class="c-tableform__row clearfix">
+								<span class="c-tableform__item">Moje nazwisko</span>
+								<input type="text" class="c-tableform__item c-tableform__item--field" placeholder="Kowalski" />
 							</label>
 							
-							<label class="c-tableform__row">
-								<span class="item">Mój adres email to</span>
-								<input type="email" class="item" placeholder="jankowalski@gmail.com" required />
+							<label class="c-tableform__row clearfix">
+								<span class="c-tableform__item">Mój adres email to</span>
+								<input type="email" class="c-tableform__item c-tableform__item--field" placeholder="jankowalski@gmail.com" required />
 							</label>
 						</div>
 
@@ -190,14 +191,14 @@ Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames a
 							<span class="c-interest__title">Wybierz co Cię interesuje (możesz zaznaczyć oba):</span>
 						
 							<span class="c-interest__checkboxes">
-								<label class="item">
+								<label class="c-interest__item">
 									<input type="checkbox" checked />
-									<span class="label">Warsztaty</span>
+									<span class="c-interest__label">Warsztaty</span>
 								</label>
 								
-								<label class="item">
+								<label class="c-interest__item">
 									<input type="checkbox" checked />
-									<span class="label">Staż</span>
+									<span class="c-interest__label">Staż</span>
 								</label>
 							</span>
 						</div>
@@ -233,7 +234,7 @@ Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames a
 				<div class="c-conditions">
 					<h3 class="o-panel__title">Warunki</h3>
 				
-					<div class="c-conditions__content">
+					<div class="o-panel__content">
 						<p>
 	Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesqqque facilisis. 
 						</p>
@@ -247,7 +248,7 @@ Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames a
 				<div class="c-contact">
 					<h3 class="o-panel__title">Kontakt</h3>
 				
-					<div class="c-contact__content">
+					<div class="o-panel__content">
 						<i class="icon-envelope"></i>
 
 						<p>
@@ -271,7 +272,7 @@ Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames a
 			<div class="o-row">
 				<a href="#home" class="c-logo icon-skygate js-goto"></a>
 
-				<a href="#home" class="go-top o-circle icon-angle-up js-goto"></a>
+				<a href="#home" class="o-circle icon-angle-up js-goto"></a>
 
 				<nav class="c-nav-social">
 					<ul>

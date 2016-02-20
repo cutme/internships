@@ -10,7 +10,7 @@
 		padding-bottom: 40px;
 	}
 	
-	.o-panel__title {
+	&__title {
 		margin-bottom: 80px;
 		padding-bottom: 8px;
 		border-bottom: 3px solid $color-page-text;
@@ -36,10 +36,11 @@
 	p {
 		margin-bottom: 2em;
 	}
-}
-
-.o-panel--large {
-	@media screen and ( min-width: 1024px ) {
-		width: grid($panel-large-width, $grid-base-width - 2 * $page-padding);
+	
+	&--large {
+		@media screen and ( min-width: 1024px ) {
+			width: grid($panel-large-width, $grid-base-width - 2 * $page-padding);
+		}
 	}
 }
+
