@@ -1,0 +1,47 @@
+.c-tableform__row {
+	@include clear;
+	display: block;
+	width: 100%;
+	border: 2px solid $color-page-text;
+	border-bottom: none;
+	font-weight: $heavy;
+	
+	&:last-of-type {
+		border: 2px solid $color-page-text;
+	}
+	
+	.item {
+		padding: grid(20, $panel-large-width);
+		letter-spacing: 2px;
+		font-size: em(16);
+		
+		@media screen and ( min-width: 480px ) {
+			float: left;
+			width: 50%;
+			border-right: 2px solid $color-page-text;
+		}
+		
+		@media screen and ( min-width: 1024px ) and ( max-width: 1280px ) {
+			font-size: em(14);
+		}
+		
+		@media screen and ( max-width: 640px ) {
+			font-size: em(12);
+		}
+	}
+	
+	&.error {
+		.item {
+			color: $color-error;
+		}
+	}
+	
+	input.item {
+		border-right: none;
+		line-height: inherit;			
+	}
+
+	@include input-placeholder {
+		color: $color-page-text;
+	}
+}

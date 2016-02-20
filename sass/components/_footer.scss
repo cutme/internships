@@ -23,13 +23,11 @@ body > footer {
 		}
 	}
 	
-	.logo {
-		position: relative;
-		z-index: 10;
+	.c-logo {
 		color: white;
 	}
 	
-	.nav-primary {	
+	.c-nav-primary {	
 		top: 0;
 		
 		@media screen and ( max-width: 768px ) {

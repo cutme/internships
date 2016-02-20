@@ -30,13 +30,8 @@
 			color: white;
 		}
 	}
-
-	.logo {
-		position: relative;
-		z-index: 10;
-	}
 	
-	.nav-primary {
+	.c-nav-primary {
 		top: 10px;
 		
 		a {
@@ -49,60 +44,6 @@
 
 	.o-row {
 		margin-bottom: 14vw; //200px;
-	}
-	
-	.top__addon {
-		position: absolute;
-		bottom: 15px;
-		right: 0;
-		text-align: right;
-		line-height: 1.2;		
-
-		p {
-			font-size: 2.6vw; // 50px
-			
-			@media screen and ( max-width: 640px ) {
-				font-size: em(20);
-			}
-			
-			@media screen and ( max-width: 320px ) {
-				font-size: em(16);
-			}
-		}
-		
-		@media screen and ( max-width: 1280px ) {
-			bottom: 0;
-		}
-		
-		@media screen and ( max-width: 640px ) {
-			bottom: 5px;
-		}
-	}
-
-	.top__title {
-		position: relative;
-		margin-bottom: 14vw; //300px;
-
-		h1 {
-			font: {
-				size: 10vw;
-				weight: $heavy;
-			}
-			margin-bottom: 40px;
-		}
-		
-		h4 {
-			font-size: 3.5vw;
-			font-weight: $book;
-			
-			@media screen and ( max-width: 640px ) {
-				font-size: em(20);
-			}
-			
-			@media screen and ( max-width: 320px ) {
-				font-size: em(16);
-			}
-		}
 	}
 }
 

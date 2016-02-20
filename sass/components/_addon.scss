@@ -1,0 +1,27 @@
+.c-addon {
+	position: absolute;
+	bottom: 15px;
+	right: 0;
+	text-align: right;
+	line-height: 1.2;		
+
+	p {
+		font-size: 2.6vw; // 50px
+		
+		@media screen and ( max-width: 640px ) {
+			font-size: em(20);
+		}
+		
+		@media screen and ( max-width: 320px ) {
+			font-size: em(16);
+		}
+	}
+	
+	@media screen and ( max-width: 1280px ) {
+		bottom: 0;
+	}
+	
+	@media screen and ( max-width: 640px ) {
+		bottom: 5px;
+	}
+}

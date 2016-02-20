@@ -1,0 +1,25 @@
+.c-page-title {
+	position: relative;
+	margin-bottom: 14vw; //300px;
+
+	h1 {
+		font: {
+			size: 10vw;
+			weight: $heavy;
+		}
+		margin-bottom: 40px;
+	}
+	
+	h4 {
+		font-size: 3.5vw;
+		font-weight: $book;
+		
+		@media screen and ( max-width: 640px ) {
+			font-size: em(20);
+		}
+		
+		@media screen and ( max-width: 320px ) {
+			font-size: em(16);
+		}
+	}
+}

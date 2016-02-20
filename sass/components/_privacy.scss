@@ -1,0 +1,21 @@
+.c-privacy {
+	.c-privacy__title {
+		letter-spacing: 2px;
+		
+		@media screen and ( max-width: 640px ) {
+			font-size: em(12);
+		}
+		
+		@media screen and ( min-width: $grid-base-width+px ) {
+			float: left;
+			width: grid(760, $panel-large-width);
+		}
+	}
+
+	.ui-checkbox {
+		float: left;
+		top: 6px;
+		vertical-align: top;
+		margin-right: grid(26, $panel-large-width);
+	}
+}

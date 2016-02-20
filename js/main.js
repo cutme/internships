@@ -5,7 +5,7 @@ jQuery(function($) {
 			$('input').checkBox();
 		},
 		goTo: function() {
-			$('.goto').on('click', function(e) {
+			$('.js-goto').on('click', function(e) {
 				e.preventDefault();
 				var t = $(this).attr('href'),
 					v = $('html, body'),
@@ -43,17 +43,17 @@ jQuery(function($) {
 			}
 		},
 		upload: function() {
-			var e = $('.upload'),
+			var e = $('.js-upload'),
 				b = $('.o-button__title', e),
 				d = b.text(), n;
 			$('.upload').on('change', '#file', function() {
 				n = $('#file').val().replace(/.*(\/|\\)/, '');
 				if (n) {
 					b.text(n);
-					e.addClass('file-added');
+					e.addClass('has-file');
 				} else {
 					b.text(d);
-					e.removeClass('file-added');
+					e.removeClass('has-file');
 				}
 			});
 		},

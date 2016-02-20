@@ -9,12 +9,6 @@
 		float: none !important;
 		padding-bottom: 40px;
 	}
-
-	&.panel--large {
-		@media screen and ( min-width: 1024px ) {
-			width: grid($panel-large-width, $grid-base-width - 2 * $page-padding);
-		}
-	}
 	
 	.o-panel__title {
 		margin-bottom: 80px;
@@ -44,3 +38,8 @@
 	}
 }
 
+.o-panel--large {
+	@media screen and ( min-width: 1024px ) {
+		width: grid($panel-large-width, $grid-base-width - 2 * $page-padding);
+	}
+}

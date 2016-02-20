@@ -15,37 +15,37 @@
 
 	<div class="top" id="home">
 		<div class="o-wrap">
-			
+
 			<div class="o-row">
-				<a href="#" class="logo icon-skygate"></a>
-				
-				<nav class="nav-primary">
+				<a href="#" class="c-logo icon-skygate"></a>
+
+				<nav class="c-nav-primary">
 					<ul>
 						<li>
-							<a href="#home" class="goto">Home</a>
+							<a href="#home" class="js-goto">Home</a>
 						</li>
 
 						<li>
-							<a href="#schedule" class="goto">Harmonogram</a>
+							<a href="#schedule" class="js-goto">Harmonogram</a>
 						</li>
 						
 						<li>
-							<a href="#sign-up" class="goto">Zgłoś się</a>
+							<a href="#sign-up" class="js-goto">Zgłoś się</a>
 						</li>
 					</ul>
 				</nav>
-	
+
 				<i class="o-bulb icon-bulb"></i>
 			</div>
 
-			<div class="top__title">
+			<div class="c-page-title">
 				<h1>internships<br />&amp;workshops</h1>
 				
 				<h4>for designers</h4>
 
-				<a href="#sign-up" class="go-down o-circle icon-angle-down goto"></a>
+				<a href="#sign-up" class="go-down o-circle icon-angle-down js-goto"></a>
 				
-				<div class="top__addon">
+				<div class="c-addon">
 					<p>
 						<strong>12/03/2016</strong>
 					</p>
@@ -54,11 +54,11 @@
 				</div>
 			</div>
 
-			<div class="o-panel panel--large push-left">
-				<section class="schedule" id="schedule">
-					<h3 class="o-panel__title">Harmonogram</h3>
+			<div class="o-panel o-panel--large u-push-left" id="schedule">
 
-					<ul class="schedule__icons">
+				<h3 class="o-panel__title">Harmonogram</h3>
+
+				<ul class="c-schedule__icons">
 					<li>
 						<i class="icon-design"></i>
 						<span class="caption">Design</span>
@@ -81,7 +81,7 @@
 					</li>
 				</ul>
 					
-					<div class="schedule__timeline">
+				<div class="c-schedule__timeline">
 					<ul class="timeline__column">
 						<li class="timeline__item">
 							<span class="time">
@@ -136,23 +136,22 @@
 						</li>
 					</ul>
 				</div>
-				</section>
 			</div>
-			
-			<div class="o-panel push-right">
-				<section class="idea">
-					<h3 class="o-panel__title">Idea</h3>
-					
-					<div class="o-panel__content text-justify">
-						<p>
-	Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesqqque facilisis. 
-						</p>
-						
-						<p>
-	Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Lorem ipsum dolor sit
-						</p>
-					</div>
-				</section>
+
+			<div class="o-panel u-push-right">
+
+				<h3 class="o-panel__title">Idea</h3>
+
+				<div class="o-panel__content u-text-justify">
+					<p>
+Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesqqque facilisis. 
+					</p>
+
+					<p>
+Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Lorem ipsum dolor sit
+					</p>
+				</div>
+
 			</div>
 
 		</div>
@@ -161,101 +160,94 @@
 
 	<div class="main">
 		<div class="o-wrap">
-			<div class="o-panel panel--large push-left">
-				
-				<section class="sign-up" id="sign-up">
-					<h3 class="o-panel__title">Zgłoś się</h3>
+			<div class="o-panel o-panel--large c-sign-up u-push-left" id="sign-up">
+
+				<h3 class="o-panel__title">Zgłoś się</h3>
+
+				<div class="o-panel__content">
+					<h4>Przedstaw się.</h4>
+
+					<form action="#">
+
+						<div class="o-row c-tableform">
+							<label class="c-tableform__row">
+								<span class="item">Cześć, mam na imię</span>
+								<input type="text" class="item" placeholder="Jan" />
+							</label>
+							
+							<label class="c-tableform__row">
+								<span class="item">Moje nazwisko</span>
+								<input type="text" class="item" placeholder="Kowalski" />
+							</label>
+							
+							<label class="c-tableform__row">
+								<span class="item">Mój adres email to</span>
+								<input type="email" class="item" placeholder="jankowalski@gmail.com" required />
+							</label>
+						</div>
+
+						<div class="o-row c-interest">
+							<span class="c-interest__title">Wybierz co Cię interesuje (możesz zaznaczyć oba):</span>
 						
-					<div class="o-panel__content">
-						<h4>Przedstaw się.</h4>
-						
-						<form action="#">
-							<div class="o-row">
-								<label class="label">
-									<span class="label__item">Cześć, mam na imię</span>
-									<input type="text" class="label__item" placeholder="Jan" />
-								</label>
-								
-								<label class="label">
-									<span class="label__item">Moje nazwisko</span>
-									<input type="text" class="label__item" placeholder="Kowalski" />
-								</label>
-								
-								<label class="label">
-									<span class="label__item">Mój adres email to</span>
-									<input type="email" class="label__item" placeholder="jankowalski@gmail.com" required />
-								</label>
-							</div>
-							
-							
-							<div class="o-row">
-								<div class="interest">
-									<span class="interest__title">Wybierz co Cię interesuje (możesz zaznaczyć oba):</span>
-								
-									<span class="interest__checkboxes">
-										<label class="interest__checkboxes-item">
-											<input type="checkbox" checked />
-											<span class="interest__checkboxes-label">Warsztaty</span>
-										</label>
-										
-										<label class="interest__checkboxes-item">
-											<input type="checkbox" checked />
-											<span class="interest__checkboxes-label">Staż</span>
-										</label>
-									</span>
-								</div>
-							</div>							
-							
-							<div class="o-row">
-								<div class="upload">
-									<div class="o-button">
-										<input type="file" id="file" />
-										<span class="o-button__title">Dodaj Curriculum Vitae</span>
-									</div>
-								</div>
-							</div>
-							
-							<div class="o-row">
-								<label class="privacy">
+							<span class="c-interest__checkboxes">
+								<label class="item">
 									<input type="checkbox" checked />
-									
-									<span class="privacy__title">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
-									</span>
+									<span class="label">Warsztaty</span>
 								</label>
+								
+								<label class="item">
+									<input type="checkbox" checked />
+									<span class="label">Staż</span>
+								</label>
+							</span>
+						</div>
+
+						<div class="o-row c-upload js-upload">
+							<div class="o-button">
+								<input type="file" id="file" />
+								<span class="o-button__title">Dodaj Curriculum Vitae</span>
 							</div>
-							
-							<div class="o-row">
-								<div class="submit">
-									<button type="submit" class="o-button button--large">
-										<span class="o-button__title">Wyślij</span>
-									</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</section>
-				
+						</div>
+
+						<div class="o-row">
+							<label class="c-privacy">
+								<input type="checkbox" checked />
+
+								<span class="c-privacy__title">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+								</span>
+							</label>
+						</div>
+
+						<div class="o-row">
+							<button type="submit" class="o-button button--large">
+								<span class="o-button__title">Wyślij</span>
+							</button>
+						</div>
+					</form>
+
+				</div>
 			</div>
-			
-			<div class="o-panel push-right">			
-				<section class="conditions">
+
+			<div class="o-panel u-push-right">
+
+				<div class="c-conditions">
 					<h3 class="o-panel__title">Warunki</h3>
 				
-					<div class="o-panel__content">
+					<div class="c-conditions__content">
 						<p>
-Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesqqque facilisis. 
+	Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesqqque facilisis. 
 						</p>
 						
 						<p>
-Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Lorem ipsum dolor sit
+	Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Lorem ipsum dolor sit
 						</p>
 					</div>
-				</section>
-				
-				<section class="contact">
+				</div>
+
+				<div class="c-contact">
 					<h3 class="o-panel__title">Kontakt</h3>
 				
-					<div class="o-panel__content">
+					<div class="c-contact__content">
 						<i class="icon-envelope"></i>
 
 						<p>
@@ -267,7 +259,7 @@ Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames a
 							Piłsudskiego 40/6, 50-033 Wrocław
 						</p>
 					</div>
-				</section>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -277,11 +269,11 @@ Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames a
 		<div class="wrap">
 
 			<div class="o-row">
-				<a href="#home" class="logo icon-skygate goto"></a>
-				
-				<a href="#home" class="go-top o-circle icon-angle-up goto"></a>
-				
-				<nav class="nav-social">
+				<a href="#home" class="c-logo icon-skygate js-goto"></a>
+
+				<a href="#home" class="go-top o-circle icon-angle-up js-goto"></a>
+
+				<nav class="c-nav-social">
 					<ul>
 						<li>
 							<a href="#" class="icon-facebook"></a>
@@ -297,29 +289,27 @@ Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames a
 					</ul>
 				</nav>
 			</div>
-			
+
 			<div class="o-row">
 				<p>Copyright 2016 Skygate.pl</p>
-				
-				<nav class="nav-primary">
+
+				<nav class="c-nav-primary">
 					<ul>
 						<li>
 							<a href="#">Home</a>
 						</li>
-						
 						<li>
 							<a href="#">Harmonogram</a>
 						</li>
-						
 						<li>
 							<a href="#">Zgłoś się</a>
 						</li>
 					</ul>
 				</nav>
-	
+
 				<i class="o-bulb icon-bulb"></i>
 			</div>
-			
+
 		</div>
 	</footer>
 

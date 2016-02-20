@@ -1,0 +1,45 @@
+.c-interest {
+	.ui-checkbox {
+		margin-right: grid(15, $panel-large-width);
+	}
+	
+	.c-interest__title {
+		letter-spacing: 2px;
+		font-size: em(18);
+		
+		@media screen and ( max-width: $grid-base-width+px ) {
+			display: block;
+			margin-bottom: 1em;
+		}
+		
+		@media screen and ( max-width: 1024px ) {
+			font-size: em(16);
+		}
+	}
+	
+	.item {
+		padding: 0 0 0 60px;
+		
+		@media screen and ( max-width: $grid-base-width+px ) {
+			&:first-of-type {
+				padding: 0;
+			}
+		}
+		
+		@media screen and ( max-width: 420px ) {
+			padding: 0;
+			
+			&:first-of-type {
+				padding: 0 20px 0 0;
+			}
+		}
+	}
+	
+	.label {
+		display: inline-block;
+		vertical-align: middle;
+		letter-spacing: 1px;
+		font-weight: $heavy;
+		cursor: pointer;
+	}
+}

@@ -1,4 +1,4 @@
-.sign-up {
+.c-sign-up {
 	h4 {
 		margin-bottom: 1em;
 		letter-spacing: 2px;
@@ -17,110 +17,6 @@
 			font-size: 4.5vw;
 		}
 	}
-
-	.interest {
-		.ui-checkbox {
-			margin-right: grid(15, $panel-large-width);
-		}
-		
-		.interest__title {
-			letter-spacing: 2px;
-			font-size: em(18);
-			
-			@media screen and ( max-width: $grid-base-width+px ) {
-				display: block;
-				margin-bottom: 1em;
-			}
-			
-			@media screen and ( max-width: 1024px ) {
-				font-size: em(16);
-			}
-		}
-		
-		.interest__checkboxes-item {
-			padding: 0 0 0 60px;
-			
-			@media screen and ( max-width: $grid-base-width+px ) {
-				&:first-of-type {
-					padding: 0;
-				}
-			}
-			
-			@media screen and ( max-width: 420px ) {
-				padding: 0;
-				
-				&:first-of-type {
-					padding: 0 20px 0 0;
-				}
-			}
-		}
-		
-		.interest__checkboxes-label {
-			display: inline-block;
-			vertical-align: middle;
-			letter-spacing: 1px;
-			font-weight: $heavy;
-			cursor: pointer;
-		}
-	}
-	
-	
-	.label {
-		@include clear;
-		display: block;
-		width: 100%;
-		border: 2px solid $color-page-text;
-		border-bottom: none;
-		font-weight: $heavy;
-		
-		&:last-of-type {
-			border: 2px solid $color-page-text;
-		}
-		
-		.label__item {
-			padding: grid(20, $panel-large-width);
-			letter-spacing: 2px;
-			font-size: em(16);
-			
-			@media screen and ( min-width: 480px ) {
-				float: left;
-				width: 50%;
-				border-right: 2px solid $color-page-text;
-			}
-			
-			@media screen and ( min-width: 1024px ) and ( max-width: 1280px ) {
-				font-size: em(14);
-			}
-			
-			@media screen and ( max-width: 640px ) {
-				font-size: em(12);
-			}
-		}
-		
-		&.error {
-			.label__item {
-				color: $color-error;
-			}
-		}
-		
-		input.label__item {
-			border-right: none;
-			line-height: inherit;			
-		}
-		
-		.label__field {
-			width: 100%;
-		}
-		
-		input[type=text], input[type=email] {
-			color: $color-page-text;
-			margin-top: 0;
-		}
-
-		@include input-placeholder {
-			color: $color-page-text;
-		}
-	}
 	
 	.o-button {
 		display: block;
@@ -131,67 +27,7 @@
 		margin-bottom: 50px;
 	}
 	
-	.privacy {
-		@include clear;
-
-		.privacy__title {
-			letter-spacing: 2px;
-			
-			@media screen and ( max-width: 640px ) {
-				font-size: em(12);
-			}
-			
-			@media screen and ( min-width: $grid-base-width+px ) {
-				float: left;
-				width: grid(760, $panel-large-width);
-			}
-		}
-
-		.ui-checkbox {
-			float: left;
-			top: 6px;
-			vertical-align: top;
-			margin-right: grid(26, $panel-large-width);
-		}
-	}
-	
 	.o-row {
 		margin-bottom: 35px;
-	}
-	
-	.upload {			
-		.o-button {
-			.o-button__title {
-				&:before {
-					@include icomoon;
-				    display: inline-block;
-					margin-right: 15px;
-				    font-size: 20px;
-					vertical-align: sub;
-					content: "\e902";					
-				}
-			}
-			
-			input[type='file'] {
-				@include opacity(0);
-				position: absolute;
-				left: 0; top: 0;
-				z-index: 3;
-				display: block;
-				cursor: inherit;		
-				font-size: 999px;
-				min-height: 100%;
-				min-width: 100%;
-				text-align: right;
-			}
-		}
-		
-		&.file-added {
-			.o-button__title {
-				&:before {
-					display: none;
-				}
-			}
-		}
 	}
 }
