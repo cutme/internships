@@ -2,4 +2,8 @@
 	position: absolute;
 	right: 0;
 	font-size: em(60);
+	
+	@media screen and ( max-width: 640px ) {
+		font-size: em(50);
+	}
 }

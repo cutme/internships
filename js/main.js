@@ -9,7 +9,11 @@ jQuery(function($) {
 				e.preventDefault();
 				var t = $(this).attr('href'),
 					v = $('html, body'),
-					o = $(t).offset().top - 20;
+					o,
+					top = $('.c-top');
+					
+				o = ($(this).hasClass('js-go-down')) ? top.outerHeight() - $(window).height() : $(t).offset().top - 20;
+				
 				v.animate({
 					scrollTop: o
 				}, {

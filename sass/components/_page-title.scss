@@ -1,6 +1,10 @@
 .c-page-title {
 	position: relative;
 	margin-bottom: 14vw; //300px;
+	
+	@media screen and ( max-width: 768px ) {
+		margin-bottom: 36vw;
+	}
 
 	h1 {
 		font: {
@@ -8,6 +12,11 @@
 			weight: $heavy;
 		}
 		margin-bottom: 40px;
+		
+		@media screen and ( max-width: 768px ) {
+			margin-bottom: 10px;
+			font-size: 14vw;
+		}
 	}
 	
 	h4 {
